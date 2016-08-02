@@ -50,7 +50,6 @@ while [ -n "$1" ]; do
 	
 	if [ -z "$THEIMPORTANTPART" ]; then
 		#we didn't get a key back. probably couldn't connect at all
-		#the switch is probably a piece of shit
 		log
 		log "Can't ssh to $IP... Maybe it's an old switch without ssh?" 
 		exit $?
