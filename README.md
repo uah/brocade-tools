@@ -12,4 +12,5 @@ If you have questions or trouble with these tools, my contact information is loc
 
 * **showvlan_to_portids.sh**: Pipe the output from 'show vlan 4000' (or whatever VLAN) into this script and it will generate interface IDs for the ports in that VLAN. This can help you move a lot of ports from one VLAN to another, for instance.
 
-* **brostack.pl**: Perl-based Nagios check to verify that all expected members of an ICX stack are present.
+* **brostack.pl**: Nagios check to verify that all expected members of an ICX stack are present.
+* **check_fastiron_lags.sh** Nagios check to verify that LAGs on an ICX stack have all their members up, if they are up at all.
