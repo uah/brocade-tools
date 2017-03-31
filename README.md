@@ -11,3 +11,5 @@ If you have questions or trouble with these tools, my contact information is loc
 * **macload.sh**: As arguments, provide the IP of the Brocade switch you just plugged everything into, followed by the name of the file created by macdump.sh. The script will produce an ICX config that will place every MAC in the same VLAN it was in at the time you ran the macdump.sh script on the Cisco switch.
 
 * **showvlan_to_portids.sh**: Pipe the output from 'show vlan 4000' (or whatever VLAN) into this script and it will generate interface IDs for the ports in that VLAN. This can help you move a lot of ports from one VLAN to another, for instance.
+
+* **brostack.pl**: Perl-based Nagios check to verify that all expected members of an ICX stack are present.
