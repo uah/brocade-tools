@@ -4,6 +4,11 @@ source /usr/local/etc/brocade-tools.conf
 
 DEVICE="$1"
 
+if [ -n "$2" ]; then
+	#use this community string instead of the one in the config file
+	COMMUNITY="$2"
+fi
+
 if [ -z "$DEVICE" ]; then
 	echo "Provide a device!" >&2
 	exit 31
